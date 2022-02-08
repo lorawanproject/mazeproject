@@ -1,0 +1,35 @@
+<html>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="./maze.js"></script>     
+<title>Maze Project</title>
+<body>
+    <div class="info">
+        <h1>Maze Project</h1>
+        
+    <p>Please Use arrow keys to move</p>
+    <p>(This project is created by Pema, Nes, and Tulasi)</p>
+  
+
+    <button class="reset" onclick="maze.reset();">Reset</button>
+    <button onclick="maze.easy();">Easy</button>
+    <button onclick="maze.mid();">Medium</button>
+    <button onclick="maze.hard();">Hard</button>
+    <button onclick="maze.extreme();">Extreme</button>
+</div>
+    <div id="grid"></div>
+    <script src="maze.js"></script>
+    <script>
+      window.maze = new Maze({
+        gridElement: document.getElementById('grid'),
+        gridSize: new Point(10, 10),
+        blockSize: 25,
+        onSolved: function() {
+          setTimeout(function() { alert('yay Completed, Try next challenge'); }, 200);
+        }
+      });
+      maze.reset();
+    </script>
+        
+</body>
+</html>

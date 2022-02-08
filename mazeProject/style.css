@@ -1,0 +1,123 @@
+body {
+  
+    background-image: url("./img/bg.jpg");
+    color: white;
+    font-family: Arial;
+    align-content: center;
+    align-items: center;
+  }
+ .reset {
+      align-content: center;
+      margin-left: 25%;
+  }
+  button{
+    background-color: #43c484;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+ .info {
+    margin: 25px;
+    height: auto;
+    width: auto;
+    border: 2px solid #fff;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    -moz-box-shadow: 0px 6px 5px #ccc;
+    -webkit-box-shadow:0px 6px 5px #ccc;
+    box-shadow: 0px 6px 5px #ccc;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius: 10px;
+}
+  
+  #grid {
+    position: absolute;
+    align-content: center;
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    min-height: 600px;
+  }
+  h1{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      margin-left: 25%;
+     
+      color: black;
+  }
+  p{
+    margin-left: 25%;
+    color: black;
+   
+  }
+  
+  .block {
+    border: 1px solid black;
+    position: absolute;
+    margin: 1px;
+    width: 25px;
+    height: 25px;
+    font-size: 8px;
+    display: block;
+    background: rgb(248, 248, 248);
+    color: white;
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+  }
+  
+  .block.generated {
+    background: #fff;
+  }
+  
+  .block.generated.target {
+    background: #ffd27f;
+  }
+  
+  .block.generated.visited {
+    background: #eef;
+  }
+  
+  .block.generated.visited.path {
+    background: #aaf;
+  }
+  
+  .block.current {
+    background: #0f0 !important;
+  }
+  
+  .block.current.target {
+   background: #ffa500 !important;
+  }
+  
+  .block.current.error {
+    background: #f00 !important;
+  }
+  
+  .block.left {
+    border-left: 1px solid transparent;
+  }
+  
+  .block.right {
+    border-right: 1px solid transparent;
+  }
+  
+  .block.bottom {
+    border-bottom: 1px solid transparent;
+  }
+  
+  .block.top {
+    border-top: 1px solid transparent;
+  }
